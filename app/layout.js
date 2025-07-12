@@ -1,5 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${outfit.variable} ${ovo.variable} antialiased`}>
         {children}
+        <Toaster position="bottom-right" />
       </body>
     </html>
   );

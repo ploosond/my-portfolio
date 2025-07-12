@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const mobileMenuRef = useRef(null);
 
@@ -27,9 +27,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/30 border-b border-white/20 shadow-sm px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between ">
         <a href="#top ">
-          <Image src={assets.logo} alt="logo" className="w-28  mr-14" />
+          <Image src={assets.logo} alt="logo" className="w-32" />
         </a>
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-4 bg-white/50 shadow-sm">
           <li>
@@ -78,13 +78,16 @@ const Navbar = () => {
         {/* mobile navbar */}
         <ul
           ref={mobileMenuRef}
-          className={`fixed top-0 right-0 h-screen z-50 bg-white mt-[11px] mr-[8px]  flex md:hidden flex-col gap-4 px-10 py-20  text-end text-3xl transform transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 w-2/5 h-screen z-50  backdrop-blur-xl bg-white/30 border-b border-white/20 shadow-sm flex md:hidden flex-col gap-6 px-10 py-20  text-end text-2xl transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           {/* mobile menu close */}
 
-          <button onClick={toggleIsOpen} className="absolute top-3 right-3">
+          <button
+            onClick={toggleIsOpen}
+            className="absolute top-[16px] right-[20px]"
+          >
             <X width={24} />
           </button>
           <li onClick={toggleIsOpen}>
