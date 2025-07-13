@@ -1,4 +1,4 @@
-import { Outfit, Ovo } from "next/font/google";
+import { Outfit, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
@@ -8,10 +8,10 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
-const ovo = Ovo({
+const josefinSans = Josefin_Sans({
   subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-ovo",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-outfit",
 });
 
 export const metadata = {
@@ -22,7 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} ${ovo.variable} antialiased`}>
+      <body
+        className={`${outfit.variable}  ${josefinSans.variable} antialiased`}
+      >
         {children}
         <Toaster position="bottom-right" />
       </body>

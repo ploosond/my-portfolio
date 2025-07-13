@@ -37,9 +37,7 @@ const Contact = () => {
       <Intro
         heading="Connect with me"
         subHeading="Get in touch"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt neque
-        temporibus tenetur, eum ipsam a, similique repellat quisquam rerum eius
-        magni dolore ab accusantium amet vero, repellendus nam voluptas."
+        description="Feel free to reach out for collaborations, questions, or just a friendly chat."
       />
 
       <form onSubmit={onSubmit} className="max-w-2xl m-auto">
@@ -67,12 +65,15 @@ const Contact = () => {
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
         ></textarea>
         <div className="container mx-auto w-max group">
-          <button className="bg-black text-white  flex items-center justify-center gap-2 px-12 py-4 rounded-full cursor-pointer">
-            Submit now
-            <MoveRightIcon
-              width={24}
-              className="group-hover:translate-x-1 transition-transform duration-500"
-            />
+          <button className="relative bg-black text-white flex items-center justify-center gap-2 px-12 py-4 rounded-full cursor-pointer overflow-hidden group transition-all duration-300">
+            <span className="relative z-10 flex items-center gap-2">
+              Submit now
+              <MoveRightIcon
+                width={24}
+                className="group-hover:translate-x-1 transition-transform duration-500"
+              />
+            </span>
+            <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
           </button>
         </div>
       </form>

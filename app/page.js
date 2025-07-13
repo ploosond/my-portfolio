@@ -3,8 +3,8 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import Services from "@/components/Services";
-import Work from "@/components/Work";
+import Projects from "@/components/Projects";
+import Stack from "@/components/Stack";
 
 export default function Home() {
   return (
@@ -16,9 +16,9 @@ export default function Home() {
       {/* About me */}
       <About />
       {/* Services */}
-      <Services />
-      {/* Work */}
-      <Work />
+      <Stack />
+      {/* Projects */}
+      <Projects />
       {/* Contact */}
       <Contact />
       {/* Footer */}

@@ -1,5 +1,3 @@
-import { assets, infoList, toolsData } from "@/assets/assets";
-import Image from "next/image";
 import Intro from "./Intro";
 
 const About = () => {
@@ -8,44 +6,55 @@ const About = () => {
       <Intro
         heading="Introduction"
         subHeading="About me"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quam ad possimus tenetur sit asperiores veritatis ipsum laborum dolor consequatur nobis, magni reiciendis accusamus facilis ducimus porro, quos, cupiditate iste?"
+        description="I'm passionate about crafting intuitive digital experiences across web, mobile, and AI. I thrive on solving challenges through design, development, and continuous learning."
       />
-
-      <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div className="w-64 sm:w-80 rounded-3xl max-w-none">
-          <Image
-            src={assets.user_image}
-            alt="user image"
-            className="w-full rounded-3xl"
-          />
-        </div>
-        <div className="flex-1">
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <li
-                key={index}
-                className="border=[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-hover-light hover:-translate-y-1 duration-500 hover:shadow-black"
-              >
-                <Image src={icon} alt={title} className="w-7 mt-3" />
-                <h3 className="my-4 font-semibold text-gray-700 ">{title}</h3>
-                <p className="text-gray-600 text-sm">{description}</p>
-              </li>
-            ))}
+      <div className="flex flex-col md:flex-row justify-center gap-20">
+        {/* Education */}
+        <section className="px-4 py-3">
+          <h2 className="text-2xl font-bold mb-4">Education</h2>
+          <ul className="space-y-6">
+            <li>
+              <h3 className="text-lg font-semibold">
+                M.Sc. Information Engineering and Computer Science
+              </h3>
+              <p className="text-sm text-gray-500">
+                Rhine-Waal University of Applied Sciences – Kamp-Lintfort,
+                Germany
+              </p>
+              <p className="text-sm text-gray-500">03/2023 – Present</p>
+            </li>
+            <li>
+              <h3 className="text-lg font-semibold">
+                B.Sc. Computer Science and Information Technology
+              </h3>
+              <p className="text-sm text-gray-500">
+                University of Social Sciences – Warsaw, Poland
+              </p>
+              <p className="text-sm text-gray-500">08/2016 – 07/2020</p>
+            </li>
           </ul>
+        </section>
 
-          <h4 className="my-6 text-gray-700 font-ovo">Tools I use</h4>
-
-          <ul className="flex items-center gap-3 sm:gap-5">
-            {toolsData.map((tool, index) => (
-              <li
-                key={index}
-                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
-              >
-                <Image src={tool} alt="tools" className="w-5 sm:w-7" />
-              </li>
-            ))}
+        {/* Certifications */}
+        <section className="px-4 py-3">
+          <h2 className="text-2xl font-bold mb-4">Certifications</h2>
+          <ul className="space-y-6">
+            <li>
+              <h3 className="text-lg font-semibold">
+                Deep Dive Into Modern Web Development
+              </h3>
+              <p className="text-sm text-gray-500">University of Helsinki</p>
+              <p className="text-sm text-gray-500">03/2025</p>
+            </li>
+            <li>
+              <h3 className="text-lg font-semibold">
+                The Modern Python 3 Bootcamp
+              </h3>
+              <p className="text-sm text-gray-500">Udemy</p>
+              <p className="text-sm text-gray-500">06/2020</p>
+            </li>
           </ul>
-        </div>
+        </section>
       </div>
     </div>
   );
