@@ -6,7 +6,7 @@ const About = () => {
       <Intro
         heading="Introduction"
         subHeading="About me"
-        description="I'm passionate about crafting intuitive digital experiences across web, mobile, and AI. I thrive on solving challenges through design, development, and continuous learning."
+        description="I’m passionate about creating intuitive and impactful digital experiences across web, mobile, and AI platforms. I enjoy tackling challenges through thoughtful design and continuous learning, building products that adapt and grow with users."
       />
       <div className="flex flex-col md:flex-row justify-center gap-20">
         {/* Education */}

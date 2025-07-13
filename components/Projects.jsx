@@ -3,16 +3,6 @@ import Intro from "./Intro";
 import { TbBrandGithub, TbBrowserShare } from "react-icons/tb";
 import { workData } from "@/assets/assets";
 
-const project = {
-  title: "Veggie Box",
-  description:
-    "A responsive site for a fresh produce subscription service. Clean layout and vibrant visuals.",
-  url: "https://veggie-box.vercel.app/",
-  github: "https://github.com/ploosond/VeggieBox",
-  stack: ["React", "Express", "MongoDB", "Nodejs", "Stripe"],
-  bgImage: "/work-1.png",
-};
-
 const Projects = () => {
   return (
     <div id="projects" className="w-full px-[12%] py-10 scroll-mt-20">
