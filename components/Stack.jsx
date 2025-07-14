@@ -3,7 +3,7 @@ import { techStack } from "@/assets/assets";
 
 const Stack = () => {
   return (
-    <div id="stack" className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="stack" className="w-full h-screen px-[12%] pt-10 scroll-mt-20">
       <Intro
         heading="My Stack"
         subHeading="Technologies & Tools I use"

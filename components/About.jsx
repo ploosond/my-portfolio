@@ -2,7 +2,7 @@ import Intro from "./Intro";
 
 const About = () => {
   return (
-    <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="about" className="w-full h-screen px-[12%] pt-10 scroll-mt-20">
       <Intro
         heading="Introduction"
         subHeading="About me"

@@ -5,7 +5,7 @@ import Intro from "./Intro";
 
 const Header = () => {
   return (
-    <header className="w-full flex flex-col items-center justify-center gap-4 lg:overflow-hidden pt-32">
+    <header className="w-full h-screen flex flex-col items-center justify-center gap-4 lg:overflow-hidden pt-32">
       <Image
         src={assets.profile_img}
         alt="profile image"

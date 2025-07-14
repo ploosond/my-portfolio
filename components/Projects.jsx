@@ -5,7 +5,7 @@ import { workData } from "@/assets/assets";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="projects" className="w-full h-screen px-[12%] pt-10 scroll-mt-20">
       <Intro
         heading="My portfolio"
         subHeading="My latest projects"
